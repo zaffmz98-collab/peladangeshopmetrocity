@@ -1,9 +1,0 @@
-/* Hero photo background */
-.hero-photo {
-  background-image:
-    linear-gradient(rgba(10, 13, 20, 0.82), rgba(10, 13, 20, 0.88)),
-    url("https://images.squarespace-cdn.com/content/v1/5f24290fd0d0910ecab2b02e/b0a27f46-1fb8-4613-a240-45946b264eb7/Darulhana_0003.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
