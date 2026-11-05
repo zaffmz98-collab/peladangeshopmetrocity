@@ -73,6 +73,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        img {
+            cursor: zoom-in;
+        }
     </style>
 </head>
 <body class="antialiased text-slate-300">
@@ -83,8 +86,8 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Logo -->
                 <a href="#home" class="flex items-center space-x-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-store text-lg"></i>
+                    <div class="w-10 h-10 rounded-xl overflow-hidden group-hover:scale-105 transition-transform">
+                        <img src="https://i.ibb.co/Qj9mJM2Y/logo-ppk.png" alt="Peladang logo" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <span class="text-xl font-extrabold tracking-tight text-white block leading-none">PELADANG</span>
@@ -195,17 +198,28 @@
                 <!-- Right Visual -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Card decoration -->
+                        <!-- Three-photo collage -->
                         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-blue-600 opacity-30 blur-xl"></div>
-                        <div class="relative rounded-2xl overflow-hidden glass-card border border-slate-700/50">
-                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1000&q=80" 
-                                 alt="Sarawak Highland Rice & Local Products" 
-                                 class="w-full h-[420px] object-cover"
-                                 onerror="this.src='https://placehold.co/600x800/1e293b/ffffff?text=Sarawak+Local+Market'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
-                            
+                        <div class="relative rounded-2xl glass-card border border-slate-700/50 p-3 sm:p-4">
+                            <div class="grid grid-cols-3 gap-3 h-[220px] sm:h-[280px]">
+                                <div class="overflow-hidden rounded-xl border border-slate-600/70 bg-dark-900">
+                                    <img src="https://i.ibb.co/nM4q2hJs/gamba-kaunter.jpg"
+                                         alt="Peladang Eshop MetroCity store counter"
+                                         class="w-full h-full object-cover">
+                                </div>
+                                <div class="overflow-hidden rounded-xl border border-slate-600/70 bg-dark-900">
+                                    <img src="https://i.ibb.co/rfbsfj7L/gamba-dlm.jpg"
+                                         alt="Peladang Eshop MetroCity store interior"
+                                         class="w-full h-full object-cover">
+                                </div>
+                                <div class="overflow-hidden rounded-xl border border-slate-600/70 bg-dark-900">
+                                    <img src="https://i.ibb.co/My927NQr/gamba-depan.jpg"
+                                         alt="Traditional Pes Laksa Sarawak"
+                                         class="w-full h-full object-cover">
+                                </div>
+                            </div>
                             <!-- Floating Badge -->
-                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-panel border border-slate-700/60 flex items-center space-x-4">
+                            <div class="mt-3 p-4 rounded-xl glass-panel border border-slate-700/60 flex items-center space-x-4">
                                 <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
                                     <i class="fa-solid fa-leaf text-xl"></i>
                                 </div>
@@ -234,10 +248,10 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12" id="product-grid">
                 <!-- Item 1 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsJTHLo4HWbTg5KVG_ffcRMd0mbutl4Cf_kY59FuYGtA&s=10" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/TM2yS0wk/20261014-112300.jpg" 
                              alt="Stingless Bee Honey Madu Kelulut" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Madu+Kelulut'">
                         <span class="absolute top-4 right-4 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -260,10 +274,10 @@
 
                 <!-- Item 2 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://images.unsplash.com/photo-1509358271058-acd05cc93280?auto=format&fit=crop&w=600&q=80" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/q3czwFHc/20261014-112626.jpg" 
                              alt="Creamy White Pepper Sarawak" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=White+Pepper'">
                         <span class="absolute top-4 right-4 bg-purple-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -286,10 +300,10 @@
 
                 <!-- Item 3 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/n46MKKw/20261014-105109.jpg" 
                              alt="Sesar Unjur Smoked Shrimp" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sesar+Unjur'">
                         <span class="absolute top-4 right-4 bg-purple-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -312,10 +326,10 @@
 
                 <!-- Item 4 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOC7zubX7IndJnpa8Ya2W1Md7gGqf31albvi07sgBssA&s=10" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/KpXbxNsK/20261014-111019.jpg" 
                              alt="Laksa Sarawak Instant Paste" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Laksa+Sarawak'">
                         <span class="absolute top-4 right-4 bg-purple-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -323,7 +337,7 @@
                         <div>
                             <div class="flex justify-between items-start mb-2">
                                 <h3 class="text-xl font-bold text-white">Pes Laksa Sarawak</h3>
-                                <span class="text-lg font-extrabold text-brand-400">RM 17.00</span>
+                                <span class="text-lg font-extrabold text-brand-400">RM 14.00</span>
                             </div>
                             <p class="text-slate-400 text-sm leading-relaxed">Quick and easy instant paste to recreate the legendary authentic Sarawak Laksa taste.</p>
                         </div>
@@ -338,10 +352,10 @@
 
                 <!-- Item 5 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/cXgtnvbw/20261014-110849.jpg" 
                              alt="Espresso Sarawak Coffee Liberica" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Sarawak+Coffee'">
                         <span class="absolute top-4 right-4 bg-purple-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -364,10 +378,10 @@
 
                 <!-- Item 6 -->
                 <div class="product-item glass-card rounded-2xl overflow-hidden transition-all duration-300 flex flex-col" data-category="specialty">
-                    <div class="relative overflow-hidden h-52">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZrI0PQKX9mWJlTVW-yxHdZeieaf35jEv9ns_D0MBqSA&s=10" 
+                    <div class="relative overflow-hidden h-48 bg-dark-900">
+                        <img src="https://i.ibb.co/pj6VgfRP/20261014-105036.jpg" 
                              alt="Saguk Dalat Sago Pearls" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                              onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Saguk+Dalat'">
                         <span class="absolute top-4 right-4 bg-purple-600/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">Local Specialty</span>
                     </div>
@@ -434,61 +448,61 @@
             </div>
 
             <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=800&q=80" 
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card bg-dark-900">
+                    <img src="https://i.ibb.co/TM2yS0wk/20261014-112300.jpg" 
                          alt="Madu Kelulut Honey" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Madu+Kelulut'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Madu Kelulut Honey</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://images.unsplash.com/photo-1509358271058-acd05cc93280?auto=format&fit=crop&w=800&q=80" 
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card">
+                    <img src="https://i.ibb.co/q3czwFHc/20261014-112626.jpg" 
                          alt="White Pepper Sarawak" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=White+Pepper'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Creamy White Pepper</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card">
+                    <img src="https://i.ibb.co/n46MKKw/20261014-105109.jpg" 
                          alt="Sesar Unjur Smoked Shrimp" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Sesar+Unjur'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Sesar Unjur Smoked Shrimp</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOC7zubX7IndJnpa8Ya2W1Md7gGqf31albvi07sgBssA&s=10" 
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card">
+                    <img src="https://i.ibb.co/KpXbxNsK/20261014-111019.jpg" 
                          alt="Pes Laksa Sarawak" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Pes+Laksa+Sarawak'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Pes Laksa Sarawak Instant</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" 
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card">
+                    <img src="https://i.ibb.co/cXgtnvbw/20261014-110849.jpg" 
                          alt="Espresso Sarawak Coffee" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Sarawak+Coffee'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Espresso Sarawak Coffee</span>
                     </div>
                 </div>
 
-                <div class="relative group overflow-hidden rounded-2xl h-72 glass-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZrI0PQKX9mWJlTVW-yxHdZeieaf35jEv9ns_D0MBqSA&s=10" 
+                <div class="relative group overflow-hidden rounded-xl h-48 glass-card">
+                    <img src="https://i.ibb.co/pj6VgfRP/20261014-105036.jpg" 
                          alt="Saguk Dalat Sago" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                         class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                          onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=Saguk+Dalat'">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-bold text-lg">Saguk Dalat Sago</span>
@@ -519,9 +533,9 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-semibold text-sm">Store Address</h4>
-                                <p class="text-slate-400 text-sm mt-1 leading-relaxed">
-                                    MetroCity Commercial Centre, Matang, 93050 Kuching, Sarawak, Malaysia
-                                </p>
+                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Level%201%2C%20Sublot%203%2C%20Metrocity%20Square%2C%20Lot%2014680%2C%20Sec%2065%20KTLD%2C%2093050%2C%2093050%20Kuching%2C%20Sarawak" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 hover:underline text-sm mt-1 leading-relaxed block">
+                                    Level 1, Sublot 3, Metrocity Square, Lot 14680, Sec 65 KTLD, 93050, 93050 Kuching, Sarawak
+                                </a>
                             </div>
                         </div>
 
@@ -570,8 +584,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold text-sm">
-                        P
+                    <div class="w-8 h-8 rounded-lg overflow-hidden">
+                        <img src="https://i.ibb.co/Qj9mJM2Y/logo-ppk.png" alt="Peladang logo" class="w-full h-full object-contain">
                     </div>
                     <span class="text-lg font-bold text-white">Peladang Eshop MetroCity</span>
                 </div>
@@ -595,6 +609,12 @@
         </div>
     </footer>
 
+    <!-- Fullscreen image viewer -->
+    <div id="image-lightbox" class="hidden fixed inset-0 z-[100] bg-black/90 p-4 items-center justify-center" role="dialog" aria-modal="true" aria-label="Fullscreen image viewer">
+        <button id="lightbox-close" type="button" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 text-white text-3xl hover:bg-white/20" aria-label="Close fullscreen image">&times;</button>
+        <img id="lightbox-image" src="" alt="" class="max-w-[95vw] max-h-[90vh] object-contain rounded-lg cursor-default">
+    </div>
+
     <!-- Interactive JS for Tabs and Mobile Menu -->
     <script>
         // Mobile Navigation Toggle
@@ -610,6 +630,53 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Open photos in a fullscreen overlay
+        const lightbox = document.getElementById('image-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxClose = document.getElementById('lightbox-close');
+        let previousImage = null;
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+            if (previousImage) previousImage.focus();
+        }
+
+        document.querySelectorAll('img').forEach(image => {
+            image.tabIndex = 0;
+            image.setAttribute('role', 'button');
+            image.setAttribute('aria-label', `View ${image.alt || 'image'} fullscreen`);
+
+            function openLightbox() {
+                previousImage = image;
+                lightboxImage.src = image.currentSrc || image.src;
+                lightboxImage.alt = image.alt;
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+                lightboxClose.focus();
+            }
+
+            image.addEventListener('click', openLightbox);
+            image.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openLightbox();
+                }
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', event => {
+            if (event.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                closeLightbox();
+            }
         });
 
     </script>
